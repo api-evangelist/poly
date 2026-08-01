@@ -1,8 +1,27 @@
 aid: poly
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/poly.png
 name: Poly
-description: Poly is a company surfaced as a portfolio company of bloomberg-beta, felicis and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Poly is an AI-powered intelligent cloud file browser that syncs a user's
+  local files to the cloud and layers an AI agent over them, letting people search by
+  image, concept, phrase, color or face and ask natural-language questions about their
+  documents, images, video and audio to get summaries, transcriptions, tags and generated
+  content such as podcasts and presentations. Founded by CEO Abhay Agarwal, Poly (formerly
+  reached at withpoly.com, now poly.app) emerged from stealth in November 2025 with $8M
+  in seed funding led by Felicis with participation from Bloomberg Beta, NextView, Figma
+  Ventures, AI Grant, Wing Ventures and MVP Ventures. It is currently in waitlist/beta on
+  web and Mac, with a Windows version planned, and as of this enrichment pass publishes no
+  public developer API, SDKs, CLI, or MCP server.
 url: https://raw.githubusercontent.com/api-evangelist/poly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Artificial Intelligence
+- File Storage
+- Cloud Storage
+- File Management
+- Search
+- Productivity
+- AI Agent
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/poly-domain-security.yml
 - type: Website
-  url: https://withpoly.com
+  url: https://poly.app
+- type: SignUp
+  url: https://poly.app/login
+- type: PrivacyPolicy
+  url: https://poly.app/privacy
+- type: Support
+  url: https://poly.app/join-discord
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
